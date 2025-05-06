@@ -153,5 +153,15 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     justify-content: center;
     gap: 05cm;
     background: var(--cl-1--);
+    padding: 05cm;
+    max-width: 135px;
+    box-shadow: 3px 3px 6px; var(--cl-6--);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px; 
+    -ms-border-radius: 30px; 
+    -o-border-radius: 30px;
  }
+
+ .recipe img
 /*End Hero section*/
