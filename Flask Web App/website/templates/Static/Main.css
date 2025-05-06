@@ -3,9 +3,7 @@
 *,*::before,*::after {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: italic;
+    font-weight: 400;
     color: var(--cl-2--);
 }
 
@@ -49,10 +47,10 @@ ul {
 .row {
     display: flex;
 }
+
 .column {
     display: grid;
 }
-
 .container {
     max-width: 90%;
     margin: 0 auto;
@@ -78,4 +76,68 @@ nav {
     gap: 2cm;
 }
 
+.primary-links {
+   margin: auto;   
+}
+
+nav a, .footer-content ul a {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
+        color: var(--cl-3--);
+        fill: var(--cl-3--);
+}
 /* End navigation */
+
+/* Hero section*/
+
+.hero {
+    position: relative;
+    margin: 2cm 0;
+    fill: var(--cl-2--);
+}
+
+.hero::after, .hero:before  {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 90%;
+    width: 2.5%;
+    backgrounf: var(--cl-4--);
+}
+
+ .hero::after {
+    left: 0;
+    border-radius: 0px 50px 50px 0px;
+    -webkit-border-radius: 0px 50px 50px 0px;
+    -moz-border-radius: 0px 50px 50px 0px;
+    -ms-border-radius: 0px 50px 50px 0px;
+    -o-border-radius: 0px 50px 50px 0px;
+ }
+
+ .hero:before {
+    right: 0;
+    border-radius: 50px 0px 0px 50px;
+    -webkit-border-radius: 50px 0px 0px 50px;
+    -moz-border-radius: 50px 0px 0px 50px;
+    -ms-border-radius: 50px 0px 0px 50px;
+    -o-border-radius: 50px 0px 5px 50px;
+ }
+
+ .hero .container {
+    background: url(); <!--Enter png-->
+    background-repeat: no-repeat;
+    background-position: right center;
+    background size: contain;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px; 
+    -ms-border-radius: 50px; 
+    -o-border-radius: 50px; 
+ }
+/*End Hero section*/
