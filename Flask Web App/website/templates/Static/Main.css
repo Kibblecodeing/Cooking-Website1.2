@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,600&display=swap');
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--cl-2--);
+}
+
+body {
+    --cl-1--:#fff;
+    --cl-2--:#0000;
+    --cl-3--:#6f04fa;
+    --cl-4--:#e7fafe;
+    --cl-5--:linear-gradient(180deg, rgba(231,249,253,0) 0%,#e7f9fd 100%);
+    --cl-6--:rgba(0,0,0,0.6);
+    --cl-7--:rgba(0,0,0,0.05);
+    background: variable(--cl-1--);
+    margin: 0;
+}
+
+img {
+    max-width: 100%
+}
+
+h1,h1,h5,h6,p{
+    margin:0;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out; 
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.row {
+    display: flex;
+}
+.column {
+    display: grid;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*navigation */
+
+header {
+    align-items: center;
+    gap: 2cm;
+    padding: 2cm;
+    fill: var(--cl-2--);
+
+}
+.logo {
+    fill: var(--cl-2--);
+
+}
+
+nav {
+    align-items: center;
+    flex-grow: 1;
+    gap: 2cm;
+}
+
+/* End navigation */
