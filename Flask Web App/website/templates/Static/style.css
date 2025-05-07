@@ -155,7 +155,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     background: var(--cl-1--);
     padding: 05cm;
     max-width: 135px;
-    box-shadow: 3px 3px 6px; var(--cl-6--);
+    box-shadow: 3px 3px 6px var(--cl-6--);
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px; 
@@ -163,5 +163,100 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     -o-border-radius: 30px;
  }
 
- .recipe img
+ .recipe img {
+    max-width: 20px;
+ }
+
+ .hero h1 {
+    font-weight: 600;
+    font-size: clamp(35px, 5vw, 65px);
+    text-transform: capitalize;
+    padding: 0.5cm 0;
+
+ }
+
+ p {
+    font-size: 16px;
+    color: var(--cl-6--)
+ }
+
+ .time {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1cm;
+    padding: 2cm;
+ }
+
+.time .row {
+    align-items: center;
+    gap: 1cm;
+}
+
+.hero .time .row {
+    background: var(--cl-7--);
+    padding: 0.5cm 1cm;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px; 
+    -ms-border-radius: 30px; 
+    -o-border-radius: 30px;
+}
+
+.time p, 
+.profile {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.profile-btn {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2cm;
+    padding-top: 4em;
+}
+
+.profile {
+    align-items: center;
+    gap: 1cm;
+}
+
+.profile .p-img {
+    max-width: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; 
+    -ms-border-radius: 50%; 
+    -o-border-radius: 50%;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h6 {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+
+.profile .column {
+    gap: 0.5cm;
+}
+
+.hero a, .learn a, .insta-btn, .subscribe-input a {
+   font-weight: 600;
+   font-size: 14px;
+   text-transform: capitalize;
+   color: var(--cl-1--);
+   fill: var(--cl-1--);
+   background: var(--cl-2--);
+   padding: 1.5cm 2.5cm;
+}
 /*End Hero section*/
