@@ -8,7 +8,7 @@
 }
 
 body {
-    --cl-1--:#242323;
+    --cl-1--:#e9dddd;
     --cl-2--:#0000;
     --cl-3--:#6f04fa;
     --cl-4--:#e4fafd;
@@ -60,8 +60,8 @@ ul {
 
 header {
     align-items: center;
-    gap: 2cm;
-    padding: 2cm;
+    gap: 2em;
+    padding: 2em;
     fill: var(--cl-2--);
 
 }
@@ -73,7 +73,7 @@ header {
 nav {
     align-items: center;
     flex-grow: 1;
-    gap: 2cm;
+    gap: 2em;
 }
 
 .primary-links {
@@ -95,7 +95,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
 
 .hero {
     position: relative;
-    margin: 2cm 0;
+    margin: 2em 0;
     fill: var(--cl-2--);
 }
 
@@ -143,7 +143,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
 
  .hero-content {
       background: rgba(231, 250, 254, 0.9);
-      padding: 2cm;
+      padding: 2em;
  }
  .recipe {
     font-weight: 600;
@@ -151,9 +151,9 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     text-transform: capitalize;
     align-items: center;
     justify-content: center;
-    gap: 05cm;
+    gap: 05em;
     background: var(--cl-1--);
-    padding: 05cm;
+    padding: 05em;
     max-width: 135px;
     box-shadow: 3px 3px 6px var(--cl-6--);
     border-radius: 30px;
@@ -171,7 +171,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     font-weight: 600;
     font-size: clamp(35px, 5vw, 65px);
     text-transform: capitalize;
-    padding: 0.5cm 0;
+    padding: 0.5em 0;
 
  }
 
@@ -183,18 +183,18 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
  .time {
     align-items: center;
     flex-wrap: wrap;
-    gap: 1cm;
-    padding: 2cm;
+    gap: 1em;
+    padding: 2em;
  }
 
 .time .row {
     align-items: center;
-    gap: 1cm;
+    gap: 1em;
 }
 
 .hero .time .row {
     background: var(--cl-7--);
-    padding: 0.5cm 1cm;
+    padding: 0.5em 1cm;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px; 
@@ -213,13 +213,13 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 2cm;
+    gap: 2em;
     padding-top: 4em;
 }
 
 .profile {
     align-items: center;
-    gap: 1cm;
+    gap: 1em;
 }
 
 .profile .p-img {
@@ -247,7 +247,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
 }
 
 .profile .column {
-    gap: 0.5cm;
+    gap: 0.5em;
 }
 
 .hero a,
@@ -260,9 +260,9 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
    color: var(--cl-1--);
    fill: var(--cl-1--);
    background: var(--cl-2--);
-   padding: 1.5cm 2.5cm;
+   padding: 1.5em 2.5em;
    align-items: center;
-   gap: 1cm;
+   gap: 1em;
    border-radius: 15px;
    -webkit-border-radius: 15px;
    -moz-border-radius: 15px; 
@@ -282,14 +282,14 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
 
 /* category*/
 .category .recipes, .try{
-    padding: 2cm 0;
+    padding: 2em 0;
 }
 
 .category-title {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2cm;
+    gap: 2em;
 }
 
 h2 {
@@ -303,7 +303,7 @@ h2 {
     font-size: 16px;
     text-transform: capitalize;
     background: var(--cl-4--);
-    padding: 0.8cm 1.5cm;
+    padding: 0.8em 1.5cm;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px; 
@@ -319,14 +319,14 @@ h2 {
 
 .category-cards {
     grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: 2cm;
-    padding: 2cm 0;
+    gap: 2em;
+    padding: 2em 0;
 }
 
 .cat-card {
     text-align: center;
     background: linear-gradient(180deg, rgba(112,130,70,0) 0% rgba(112,130,70,0.2) 100%);
-    padding: 1cm;
+    padding: 1em;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px; 
@@ -363,7 +363,7 @@ h2 {
 .cat-card h6 {
     font-weight: 600;
     font-size: 18px;
-    padding-top: 1.5cm;
+    padding-top: 1.5em;
 }
 /* end category*/
 
@@ -375,13 +375,108 @@ h2 {
 }
 .section-title p {
   font-size: 16px;
-  padding: 1cm 0;
+  padding: 1em 0;
 }
 
 .recipe-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     justify-content: center;
-    gap: 2cm;
-    padding: 2cm 0;
+    gap: ecm;
+    padding: 2em 0;
+}
+
+.card {
+    position: relative;
+    background: var(--cl-5--);
+    padding: 1em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    -ms-border-radius: 15px; 
+    -o-border-radius: 15px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    -ms-border-radius: 15px; 
+    -o-border-radius: 15px;
+}
+
+.card h5 {
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 0.5em;
+}
+
+.card .like {
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    background: var(--cl-1--);
+    fill: #dbe2e5;
+    padding: 0.5cm;
+    box-shadow: 0px 5px 10px rgba(255, 99, 99, 0.2);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; 
+    -ms-border-radius: 50%; 
+    -o-border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transitioin: 0.3s ease-in-out;
+}
+
+.card .like:hover, .like.active{
+    fill: #ff6363
 }
 /* End Recipes*/
+
+/* learn*/
+
+.learn {
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.learn>* .try-content {
+    flex: 1 1 25em;
+}
+
+.learn p {
+    padding: 2cm;
+}
+
+.learn a {
+    margin-top: 2em;
+}
+
+.learn-img {
+    justify-content: center;
+    background: var(--cl-5--)
+}
+/* End learn*/
+
+/*try content*/
+
+.try-content {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.try-content h2{
+    max-width: 700px;
+}
+/* End try content*/
+
+/* subscribe*/
+/* End subscribe*/
