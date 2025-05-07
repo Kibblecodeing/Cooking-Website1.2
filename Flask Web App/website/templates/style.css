@@ -250,7 +250,10 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     gap: 0.5cm;
 }
 
-.hero a, .learn a, .insta-btn, .subscribe-input a {
+.hero a,
+.learn a,
+.insta-btn,
+.subscribe-input a {
    font-weight: 600;
    font-size: 14px;
    text-transform: capitalize;
@@ -258,5 +261,12 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
    fill: var(--cl-1--);
    background: var(--cl-2--);
    padding: 1.5cm 2.5cm;
+   align-items: center;
+   gap: 1cm;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px; 
+   -ms-border-radius: 15px; 
+   -o-border-radius: 15px;
 }
-/*End Hero section*/
+/*End hero section*/
