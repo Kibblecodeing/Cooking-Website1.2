@@ -11,7 +11,7 @@ h2
 }
 
 body {
-    --cl-1--:#e9dddd;
+    --cl-1--:#ffffff;
     --cl-2--:#0000;
     --cl-3--:#6f04fa;
     --cl-4--:#e4fafd;
@@ -139,7 +139,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
  }
 
  .hero .container {
-    background: url() ,var(--cl-4--);
+    background: url(images/recipe.jpg) ,var(--cl-4--);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -302,7 +302,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     gap: 2em;
 }
 
-h6 {
+h2 {
     font-weight: 600;
     font-size: clamp(30px,5px,50px);
     text-transform: capitalize;
@@ -391,7 +391,7 @@ h6 {
 .recipe-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     justify-content: center;
-    gap: ecm;
+    gap: 2em;
     padding: 2em 0;
 }
 
@@ -428,7 +428,7 @@ h6 {
     right: 7%;
     background: var(--cl-1--);
     fill: #dbe2e5;
-    padding: 0.5cm;
+    padding: 0.5em;
     box-shadow: 0px 5px 10px rgba(255, 99, 99, 0.2);
     cursor: pointer;
     border-radius: 50%;
@@ -443,7 +443,7 @@ h6 {
     -o-transitioin: 0.3s ease-in-out;
 }
 
-.card .like:hover, .like.active{
+.card .like:hover, .like.active {
     fill: #ff6363
 }
 /* End Recipes*/
@@ -489,21 +489,21 @@ h6 {
 /* End try content*/
 
 /* subscribe*/
-.subscribe {
+.subscribe.container {
     background: url(./images/backgroudn.jpg), var(--cl-4--);
     background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: cover;
+    background-position: bottom center;
+    background-size: contain;
     padding: 2em;
     margin: 2em auto;
     align-items: cover;
     justify-self: center;
+    overflow: hidden;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px; 
     -ms-border-radius: 50px; 
     -o-border-radius: 50px;
-    min-width: 60vh;
 }
 
 .subscribe-input {
@@ -516,7 +516,7 @@ h6 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: var(--cl-1--);
+    background: var(--cl-4--);
     padding: 1em;
     gap: 2em;
     border-radius: 15px;
@@ -566,3 +566,8 @@ footer hr {
 
 }
 /* end footer*/
+
+.try {
+    background: var(--cl-4--);
+    
+}
