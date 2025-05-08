@@ -423,6 +423,7 @@ h2 {
 }
 
 .card .like {
+    display: inline-block;
     position: absolute;
     top: 7%;
     right: 7%;
@@ -569,5 +570,5 @@ footer hr {
 
 .try {
     background: var(--cl-4--);
-    
+
 }
