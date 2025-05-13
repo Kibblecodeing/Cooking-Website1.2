@@ -12,13 +12,17 @@ h2
 
 body {
     --cl-1--:#ffffff;
-    --cl-2--:#0000;
+    --cl-2--:#00000062;
     --cl-3--:#6f04fa;
     --cl-4--:#e4fafd;
     --cl-5--:linear-gradient(180deg, rgba(231,249,253,0) 0%,#e7f9fd 100%);
     --cl-6--:rgba(0,0,0,0.6);
     --cl-7--:rgba(0,0,0,0.05);
-    background: variable(--cl-1--);
+    --cl-8--:rgba(255, 255, 255, 0.87);
+    --cl-9--:rgb(0, 0, 0);
+    background-image: url('images/wall2.jpeg');
+    background-repeat:unset;
+    background-size: contain;
     margin: 0;
 }
 
@@ -27,7 +31,8 @@ img {
 }
 
 h1,h1,h5,h6,p{
-    margin: 6px;;
+    margin: 10px;;
+    font-style: var(--cl-9--);
 
 }
 
@@ -152,7 +157,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
  }
 
  .hero-content {
-      background: rgba(231, 250, 254, 0.9);
+      background: rgb(231, 250, 254);
       padding: 2em;
  }
  .recipe {
@@ -190,21 +195,39 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
     color: var(--cl-6--)
  }
 
+ .fork {
+    align-items: left;
+    flex-wrap: wrap;
+    padding: 0.5em;
+ }
+
+ .fork .row {
+    align-items: center;
+ }
+ 
+ .hero .fork .row {
+    background: var(--cl-7--);
+    padding: 0.5em 0.5em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px; 
+    -ms-border-radius: 30px; 
+    -o-border-radius: 30px;
+ }
+
  .time {
     align-items: center;
     flex-wrap: wrap;
-    gap: 1em;
-    padding: 2em;
+    padding: 0.5em;
  }
 
 .time .row {
     align-items: center;
-    gap: 1em;
 }
 
 .hero .time .row {
     background: var(--cl-7--);
-    padding: 0.5em 1cm;
+    padding: 0.5em 0.5em;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px; 
@@ -267,7 +290,7 @@ nav a:hover, .footer-content ul a:hover, .footer-links ul a:hover {
    font-weight: 600;
    font-size: 14px;
    text-transform: capitalize;
-   color: var(--cl-1--);
+   color: var(--cl-3--);
    fill: var(--cl-1--);
    background: var(--cl-2--);
    padding: 1.5em 2.5em;
@@ -345,23 +368,23 @@ h2 {
 }
 
 .cat-card:nth-of-type(2) {
-    background: linear-gradient(180deg, rgba(108,198,63,0) 0% rgba(112,130,70,0.2) 100%);
+    background: linear-gradient(180deg, rgb(108, 198, 63) 0% rgb(112, 130, 70) 100%);
 }
 
 .cat-card:nth-of-type(3) {
-    background: linear-gradient(180deg, rgba(204,38,27,0) 0% rgba(204,38,27,0.2) 100%);
+    background: linear-gradient(180deg, rgb(204, 39, 27) 0% rgb(204, 39, 27) 100%);
 }
 
 .cat-card:nth-of-type(4) {
-    background: linear-gradient(180deg, rgba(240,158,0,0) 0% rgba(240,158,0,0.2) 100%);
+    background: linear-gradient(180deg, rgb(240, 156, 0) 0% rgb(240, 156, 0) 100%);
 }
 
 .cat-card:nth-of-type(5) {
-    background: linear-gradient(180deg, rgba(222,184,135,0) 0% rgba(222,184,135,0.2) 100%);
+    background: linear-gradient(180deg, rgb(222, 184, 135) 0% rgb(222, 184, 135) 100%);
 }
 
 .cat-card:nth-of-type(6) {
-    background: linear-gradient(180deg, rgba(210,105,30,0) 0% rgba(210,105,30,0.2) 100%);
+    background: linear-gradient(180deg, rgb(210, 105, 30) 0% rgb(210, 105, 30) 100%);
 }
 
 .cat-card img {
@@ -379,6 +402,7 @@ h2 {
 
 /* Recipes*/
 .section-title {
+    font-weight: bolder;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
@@ -391,8 +415,8 @@ h2 {
 .recipe-cards {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     justify-content: center;
-    gap: 2em;
-    padding: 2em 0;
+    gap: 1em;
+    padding: 1em 0;
 }
 
 .card {
@@ -405,6 +429,17 @@ h2 {
     -ms-border-radius: 15px; 
     -o-border-radius: 15px;
 }
+
+.try-card {
+    position: relative;
+    background: var(--cl-5--);
+    padding: 1em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    -ms-border-radius: 15px; 
+    -o-border-radius: 15px;
+} 
 
 .card img {
     object-fit: cover;
@@ -428,9 +463,9 @@ h2 {
     top: 7%;
     right: 7%;
     background: var(--cl-1--);
-    fill: #dbe2e5;
+    fill: #e2e6e7;
     padding: 0.5em;
-    box-shadow: 0px 5px 10px rgba(255, 99, 99, 0.2);
+    box-shadow: 0px 5px 10px rgb(255, 99, 99);
     cursor: pointer;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -463,7 +498,9 @@ h2 {
 }
 
 .learn p {
-    padding: 2cm;
+    font-style: rgba(26, 14, 196, 0.973);
+    font-weight: bolder;
+    padding: 2em;
 }
 
 .learn a {
@@ -474,6 +511,42 @@ h2 {
     justify-content: center;
     background: var(--cl-5--)
 }
+.learn-container {
+    background: url(images/chef.jpg) ,var(--cl-4--);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px; 
+    -ms-border-radius: 50px; 
+    -o-border-radius: 50px; 
+}
+
+.try-cards .like.active{
+    display: inline-block;
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    background: var(--cl-1--);
+    fill: #e2e6e7;
+    padding: 0.5em;
+    box-shadow: 0px 5px 10px rgb(255, 99, 99);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%; 
+    -ms-border-radius: 50%; 
+    -o-border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out; 
+    -ms-transition: 0.3s ease-in-out; 
+    -o-transitioin: 0.3s ease-in-out;
+}
+
+
 /* End learn*/
 
 /*try content*/
@@ -482,11 +555,30 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     gap: 2em;
-}
+}  
 
 .try-content h2{
     max-width: 700px;
 }
+
+.try-cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        justify-content: center;
+        gap: 1em;
+        padding: 1em 0;
+}
+
+.try-cards {
+    position: relative;
+    background: var(--cl-5--);
+    padding: 1em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px; 
+    -ms-border-radius: 15px; 
+    -o-border-radius: 15px;
+}
+
 /* End try content*/
 
 /* subscribe*/
@@ -568,7 +660,3 @@ footer hr {
 }
 /* end footer*/
 
-.try {
-    background: var(--cl-4--);
-
-}
